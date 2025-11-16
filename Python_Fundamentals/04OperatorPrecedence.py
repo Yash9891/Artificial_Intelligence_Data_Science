@@ -7,7 +7,7 @@ not
 • () - Parentheses (highest priority)
 • ** - Exponent
 • +x, -x, ~x - Unary operators
-• / // % - Multiplication, division, floor, modulus
+• * / // % - Multiplication, division, floor, modulus
 • + - - Addition, subtraction
 • << >> - Bitwise shifts
 • & - Bitwise AND
