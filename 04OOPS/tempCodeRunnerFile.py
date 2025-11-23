@@ -1,0 +1,1 @@
+l2.get_storage_type()
