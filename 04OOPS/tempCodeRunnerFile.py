@@ -1,1 +1,2 @@
-l2.get_storage_type()
+    def get_Balance(self):
+        return self.__balance
