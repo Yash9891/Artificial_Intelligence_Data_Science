@@ -1,5 +1,5 @@
-f=open("05FileIO/sample.txt", "a+")
-# f.write("123")
-# data=f.read() # we can not see anything in terminal beacuse pointer is at last 123 added at last and after that nothing is there to print
-# print(data)
-# f.close()
+json_str='{"name":"Yash","Teacher":true}'
+# py_obj=json.loads(json_str)
+# print(type(json_str))
+# print(type(py_obj))
+# print(py_obj)
