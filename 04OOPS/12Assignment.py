@@ -220,3 +220,112 @@ Q7. Create a class that allows the constructor to work with:
 As direct constructor overloading (multiple constructors) are not allowed but
 we have to use default parameters to simulate constructor overloading"""
 
+
+# class Person:
+#     def __init__(self, name, age=45, address="Delhi"):
+#         self.name = name
+#         self.age = age
+#         self.address = address
+
+#     def display(self):
+#         print("Name:", self.name)
+#         print("Age:", self.age)
+#         print("Address:", self.address)
+
+# # 1️⃣ Only name
+# p1 = Person("Yash")
+
+# # 2️⃣ Name + age
+# p2 = Person("Rahul", 22)
+
+# # 3️⃣ Name + age + address
+# p3 = Person("Madhuri", 21, "Pune")
+
+# p1.display()
+# print()
+# p2.display()
+# print()
+# p3.display()
+
+
+"""
+Concept: Instance & Class Attributes
+Q8. Create a class with:
+• a class variable player_count
+• instance variables name and level
+Track how many players were created."""
+
+# class Player:
+#     # class variable
+#     player_count = 0
+
+#     def __init__(self, name, level):
+#         self.name = name
+#         self.level = level
+#         Player.player_count += 1   # increase count when a player is created
+
+
+# # creating objects
+# yash = Player("Yash", 45)
+# rahul = Player("Rahul", 25)
+# paul = Player("Paul", 49)
+# paul = Player("Paul", 49)
+
+# print("Total players created:", Player.player_count)
+
+
+"""
+Concept: Multiple Inheritance
+Q9. Create the following classes: Herbivore , Carnivore , with some
+attributes & methods. Then create a class Bear that inherits from all the above
+classes to showcase how multiple inheritance works."""
+
+# Concept: Multiple Inheritance
+
+# class Herbivore:
+#     def __init__(self):
+#         self.food_type = "Plants"
+
+#     def eat_plants(self):
+#         print("Eats plants")
+
+
+# class Carnivore:
+#     def __init__(self):
+#         self.hunt_skill = "Strong Hunter"
+
+#     def eat_meat(self):
+#         print("Eats meat")
+
+
+# # Bear inherits from BOTH Herbivore and Carnivore
+# class Bear(Herbivore, Carnivore):
+#     def __init__(self):
+#         Herbivore.__init__(self)
+#         Carnivore.__init__(self)
+#         self.name = "Bear"
+
+#     def show(self):
+#         print("Name:", self.name)
+#         print("Food Type:", self.food_type)
+#         print("Skill:", self.hunt_skill)
+
+
+# b = Bear()
+# b.show()
+# b.eat_plants()
+# b.eat_meat()
+
+
+"""
+Q10. Mini Project – OOP Chat System
+Letʼs create a Chat System using OOPs concepts. We have to create classes:
+•
+•
+•
+And we have to implement functions:
+• sending messages
+• viewing chat history
+• user joining and leaving the chatroom
+"""
+
