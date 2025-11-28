@@ -60,6 +60,45 @@ than 15
 2. Ask the user for a new city & its population - update this info in the json
 file."""
 
-import json
+# import json
 
-file_path = "05FileIO/Assignment/cities.json"
+# file_path = "05FileIO/Assignment/city.json"
+
+# with open(file_path,"r") as f:
+#     data=json.load(f)
+
+# for city, polulation in data.items():
+#     print(city, "-",polulation)
+
+# # Step 2: Ask user for new city
+# new_city = input("Enter new city name: ")
+# new_pop = int(input("Enter population: "))
+
+# # Update dictionary
+# data[new_city] = new_pop
+
+# with open(file_path, "w") as f:
+#     json.dump(data, f, indent=4)
+
+"""✅ json.load()
+➤ Used to read JSON from a file
+
+✅ json.loads()
+➤ Used to read JSON from a string
+
+Example:
+
+json_string = '{"name": "Yash", "age": 21}'"""
+
+
+
+"""Write a program that tries to open pop.txt in read mode. If the file does not
+exist, catch the exception and print "File not found!"."""
+
+try:
+    with open("05FileIO/Assignment/logi.txt","r") as f:
+        print(f.read())
+except:
+    print("File does not exists")
+else:
+    print(f" File is present")
