@@ -1,2 +1,1 @@
-    def get_Balance(self):
-        return self.__balance
+yash.deposit(200)
